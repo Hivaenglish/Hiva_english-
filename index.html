@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hiva English</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            direction: rtl;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #3366cc;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #2a54b3;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+        }
+        h1, h2 {
+            color: #224488;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .teacher-card {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .teacher-card img {
+            width: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .teacher-info {
+            flex-grow: 1;
+        }
+        form input, form select, form button {
+            padding: 8px;
+            margin-top: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background: #3366cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        form button:hover {
+            background: #224488;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 10px;
+            background: #3366cc;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hiva English</h1>
+</header>
+
+<nav>
+    <a href="#home">خانه</a>
+    <a href="#courses">دوره‌ها</a>
+    <a href="#teachers">اساتید</a>
+    <a href="#signup">ثبت‌نام</a>
+    <a href="#account">حساب کاربری</a>
+    <a href="#contact">تماس با ما</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>به سایت آموزش زبان انگلیسی هیوا خوش آمدید!</h2>
+        <p>با ما زبان انگلیسی را به ساده‌ترین و مؤثرترین روش یاد بگیرید.</p>
+    </section>
+
+    <section id="courses">
+        <h2>دوره‌های ما</h2>
+        <ul>
+            <li>دوره مبتدی</li>
+            <li>دوره متوسط</li>
+            <li>دوره پیشرفته</li>
+            <li>دوره مکالمه</li>
+        </ul>
+    </section>
+
+    <section id="teachers">
+        <h2>اساتید ما</h2>
+        <div class="teacher-card">
+            <img src="https://via.placeholder.com/100" alt="عکس استاد" />
+            <div class="teacher-info">
+                <h3>خانم سارا رضایی</h3>
+                <p>تخصص: آموزش مکالمه و گرامر</p>
+                <p>سابقه ۵ سال تدریس در آموزشگاه‌های معتبر تهران.</p>
+            </div>
+        </div>
+        <div class="teacher-card">
+            <img src="https://via.placeholder.com/100" alt="عکس استاد" />
+            <div class="teacher-info">
+                <h3>آقای محمد علیپور</h3>
+                <p>تخصص: آموزش زبان کودکان</p>
+                <p>دارای مدرک TEFL و ۷ سال سابقه تدریس.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup">
+        <h2>ثبت‌نام دوره‌ها</h2>
+        <form>
+            <input type="text" placeholder="نام کامل" required />
+            <input type="email" placeholder="ایمیل" required />
+            <input type="tel" placeholder="شماره تماس" required />
+            <select required>
+                <option value="" disabled selected>انتخاب دوره</option>
+                <option value="beginner">مبتدی</option>
+                <option value="intermediate">متوسط</option>
+                <option value="advanced">پیشرفته</option>
+                <option value="conversation">مکالمه</option>
+            </select>
+            <button type="submit">ثبت‌نام</button>
+        </form>
+    </section>
+
+    <section id="account">
+        <h2>حساب کاربری</h2>
+        <p>لطفاً برای ورود به حساب کاربری خود، فرم زیر را پر کنید:</p>
+        <form>
+            <input type="email" placeholder="ایمیل" required />
+            <input type="password" placeholder="رمز عبور" required />
+            <button type="submit">ورود</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>تماس با ما</h2>
+        <p>ایمیل: info@hivaenglish.com</p>
+        <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+    </section>
+</main>
+
+<footer>
+    © 2025 Hiva English. همه حقوق محفوظ است.
+</footer>
+
+</body>
+</html>
