@@ -47,6 +47,7 @@
         section {
             margin-bottom: 30px;
         }
+        /* استایل کارت اساتید */
         .teacher-card {
             display: flex;
             gap: 15px;
@@ -61,6 +62,23 @@
         }
         .teacher-info {
             flex-grow: 1;
+        }
+        /* استایل دوره‌ها */
+        #courses ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #courses li {
+            background: #e7f0ff;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+        }
+        #courses h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #3366cc;
         }
         form input, form select, form button {
             padding: 8px;
@@ -114,31 +132,80 @@
     <section id="courses">
         <h2>دوره‌های ما</h2>
         <ul>
-            <li>دوره مبتدی</li>
-            <li>دوره متوسط</li>
-            <li>دوره پیشرفته</li>
-            <li>دوره مکالمه</li>
+            <li><h3>Super Safari 1</h3></li>
+            <li><h3>Super Safari 2</h3></li>
+            <li><h3>Super Safari 3</h3></li>
+            <li><h3>First Friends 1</h3></li>
+            <li><h3>First Friends 2</h3></li>
+            <li><h3>First Friends 3</h3></li>
+            <li><h3>Family Friends 1</h3></li>
+            <li><h3>Family Friends 2</h3></li>
+            <li><h3>Family Friends 3</h3></li>
+            <li><h3>Teen 2 Teen 1</h3></li>
+            <li><h3>Teen 2 Teen 2</h3></li>
+            <li><h3>Teen 2 Teen 3</h3></li>
+            <li><h3>Teen 2 Teen 4</h3></li>
+            <li><h3>Touchstone 1</h3></li>
+            <li><h3>Touchstone 2</h3></li>
+            <li><h3>Touchstone 3</h3></li>
+            <li><h3>Touchstone 4</h3></li>
+            <li><h3>Solution</h3></li>
         </ul>
     </section>
 
     <section id="teachers">
         <h2>اساتید ما</h2>
+
         <div class="teacher-card">
-            <img src="https://via.placeholder.com/100" alt="عکس استاد" />
             <div class="teacher-info">
-                <h3>خانم سارا رضایی</h3>
-                <p>تخصص: آموزش مکالمه و گرامر</p>
-                <p>سابقه ۵ سال تدریس در آموزشگاه‌های معتبر تهران.</p>
+                <h3>سرکار خانم نگهداری</h3>
+                <p>مدیر</p>
             </div>
         </div>
+
         <div class="teacher-card">
-            <img src="https://via.placeholder.com/100" alt="عکس استاد" />
             <div class="teacher-info">
-                <h3>آقای محمد علیپور</h3>
-                <p>تخصص: آموزش زبان کودکان</p>
-                <p>دارای مدرک TEFL و ۷ سال سابقه تدریس.</p>
+                <h3>زینب عالمی زاده</h3>
             </div>
         </div>
+
+        <div class="teacher-card">
+            <div class="teacher-info">
+                <h3>زهرا حسینی فرد</h3>
+            </div>
+        </div>
+
+        <div class="teacher-card">
+            <div class="teacher-info">
+                <h3>فاطمه حیدری</h3>
+            </div>
+        </div>
+
+        <div class="teacher-card">
+            <div class="teacher-info">
+                <h3>فاطمه سادات حیدری</h3>
+            </div>
+        </div>
+
+        <div class="teacher-card">
+            <div class="teacher-info">
+                <h3>گلشید فتاحی</h3>
+            </div>
+        </div>
+
+        <div class="teacher-card">
+            <div class="teacher-info">
+                <h3>خانم نامجو</h3>
+            </div>
+        </div>
+
+        <div class="teacher-card">
+            <div class="teacher-info">
+                <h3>فاطمه قدوسی</h3>
+                <p>منشی</p>
+            </div>
+        </div>
+
     </section>
 
     <section id="signup">
@@ -149,10 +216,24 @@
             <input type="tel" placeholder="شماره تماس" required />
             <select required>
                 <option value="" disabled selected>انتخاب دوره</option>
-                <option value="beginner">مبتدی</option>
-                <option value="intermediate">متوسط</option>
-                <option value="advanced">پیشرفته</option>
-                <option value="conversation">مکالمه</option>
+                <option value="super_safari_1">Super Safari 1</option>
+                <option value="super_safari_2">Super Safari 2</option>
+                <option value="super_safari_3">Super Safari 3</option>
+                <option value="first_friends_1">First Friends 1</option>
+                <option value="first_friends_2">First Friends 2</option>
+                <option value="first_friends_3">First Friends 3</option>
+                <option value="family_friends_1">Family Friends 1</option>
+                <option value="family_friends_2">Family Friends 2</option>
+                <option value="family_friends_3">Family Friends 3</option>
+                <option value="teen_2_teen_1">Teen 2 Teen 1</option>
+                <option value="teen_2_teen_2">Teen 2 Teen 2</option>
+                <option value="teen_2_teen_3">Teen 2 Teen 3</option>
+                <option value="teen_2_teen_4">Teen 2 Teen 4</option>
+                <option value="touchstone_1">Touchstone 1</option>
+                <option value="touchstone_2">Touchstone 2</option>
+                <option value="touchstone_3">Touchstone 3</option>
+                <option value="touchstone_4">Touchstone 4</option>
+                <option value="solution">Solution</option>
             </select>
             <button type="submit">ثبت‌نام</button>
         </form>
